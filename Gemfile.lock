@@ -32,6 +32,3 @@ DEPENDENCIES
   ruby_rhymes
   sinatra
   slim
-
-BUNDLED WITH
-   1.10.6

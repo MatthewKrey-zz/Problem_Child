@@ -1,0 +1,13 @@
+<h2>Awesome! Here are our users so far. Check out the text editor on the right.</h2>
+<h2>Great! We want to know who our users are. What command do you think we should run to see them?</h2>
+<form action="/001_variables" method="post">
+  <div>
+    <input type="submit" name="user[0][name]" value="User">
+    <input type="submit" name="user[0][name]" value="Users">
+  </div>
+</form>
+
+<h1>TEXT EDITOR</h1>
+<h2>User = '<%= @params["user"]["0"]["name"]%>'</h2>
+<h2>User = '<%= @params["user"]["1"]["name"]%>'</h2>
+<h2>User = '<%= @params["user"]["2"]["name"]%>'</h2>
