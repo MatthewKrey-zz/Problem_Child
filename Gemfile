@@ -7,3 +7,4 @@ gem 'slim'
 gem 'ruby_rhymes'
 gem 'pry'
 gem 'require_all'
+gem 'sinatra-flash', require: "sinatra/flash"

@@ -4,6 +4,8 @@ require 'pry'
 
 class App < Sinatra::Base
   set :views, Proc.new { File.join(root, '/views')}
+  enable :sessions
+  register Sinatra::Flash
 
   get '/' do
     erb :'index'
@@ -13,6 +15,11 @@ class App < Sinatra::Base
     @user = User.new(params)
     erb :'001_variables/variables_index'
   end
+
+  # post '/001_variables/01' do
+  #   flash[:notice] = "Successfully created song."
+  #   erb :'001_variables/variables_index'
+  # end
 end
 
   # get '/' do
