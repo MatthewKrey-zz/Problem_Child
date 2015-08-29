@@ -13,13 +13,13 @@
 
   <div class="lesson">
     <span class="lesson-instructions">
-      <p>Now we want to know who our users are.<br>What command should we run to see them?<p>
+      Who are your Users?
     </span>
 
     <span class="lesson-buttons">
       <form action="/001_variables/variables_index" method="post">
         <div>
-          <input type="submit" name="answer" value="User">
+          <input type="submit" name="answer" value="<%= @user.name %>">
           <input type="submit" name="answer" value="Users">
         </div>
       </form>
@@ -27,13 +27,10 @@
   </div>
 
   <div class="text-editor">
-    <div id="file-name">
-      <p>application.rb</p>
-    </div>
     <p id="text-editor-text">
-      User = '<%= @params["user"]["name"]%>'<br>
-      User = '<%= @params["user"]["1"]["name"]%>'<br>
-      User = '<%= @params["user"]["2"]["name"]%>'
+      User = 'Mom'<br>
+      User = 'Jamie'<br>
+      User = '<%= @user.name%>'<br>
     </p>
   </div>
 
@@ -41,3 +38,4 @@
     <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
   </div>
 </body>
+</html>

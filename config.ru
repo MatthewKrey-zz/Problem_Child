@@ -1,3 +1,4 @@
 require './main'
 use Rack::MethodOverride
-run App
+a = App.new
+run a

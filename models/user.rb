@@ -1,5 +1,2 @@
-class User
-  def initialize(params)
-    @params = params
-  end
+class User < ActiveRecord::Base
 end
