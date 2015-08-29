@@ -16,10 +16,16 @@ class App < Sinatra::Base
     erb :'001_variables/variables_index'
   end
 
-  # post '/001_variables/01' do
-  #   flash[:notice] = "Successfully created song."
-  #   erb :'001_variables/variables_index'
-  # end
+  post '/001_variables/variables_index' do
+    @answer = Answer.new(params)
+    if @params["answer"] == "Users"
+      # flash[:notice] = "Incorrect answer! Here's why"
+      erb :'001_variables/correct_answer'
+    elsif @params["answer"] == "User"
+      # flash[:notice] = "Awesome!"
+      erb :'001_variables/correct_answer'
+    end
+  end
 end
 
   # get '/' do

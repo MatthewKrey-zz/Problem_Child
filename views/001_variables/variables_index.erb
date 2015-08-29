@@ -1,13 +1,43 @@
-<h2>Awesome! Here are our users so far. Check out the text editor on the right.</h2>
-<h2>Great! We want to know who our users are. What command do you think we should run to see them?</h2>
-<form action="/001_variables/01" method="post">
-  <div>
-    <input type="submit" value="User">
-    <input type="submit" value="Users">
-  </div>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="code-pirates.css">
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
 
-<h1>TEXT EDITOR</h1>
-<h2>User = '<%= @params["user"]["0"]["name"]%>'</h2>
-<h2>User = '<%= @params["user"]["1"]["name"]%>'</h2>
-<h2>User = '<%= @params["user"]["2"]["name"]%>'</h2>
+<body>
+  <div class="story">
+    <p>Awesome! We've just added our new users to our application.<br>
+    Check out the text editor on the right to see our current program.</p>
+  </div>
+
+  <div class="lesson">
+    <span class="lesson-instructions">
+      <p>Now we want to know who our users are.<br>What command should we run to see them?<p>
+    </span>
+
+    <span class="lesson-buttons">
+      <form action="/001_variables/variables_index" method="post">
+        <div>
+          <input type="submit" name="answer" value="User">
+          <input type="submit" name="answer" value="Users">
+        </div>
+      </form>
+    </span>
+  </div>
+
+  <div class="text-editor">
+    <!-- <div id="file-name">
+      <p>application.rb</p>
+    </div> -->
+    <p id="text-editor-text">
+      User = '<%= @params["user"]["0"]["name"]%>'<br>
+      User = '<%= @params["user"]["1"]["name"]%>'<br>
+      User = '<%= @params["user"]["2"]["name"]%>'
+    </p>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
+  </div>
+</body>
