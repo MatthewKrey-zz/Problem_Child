@@ -1,39 +1,50 @@
-<<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>ProblemChild</title>
-  <link rel="stylesheet" type="text/css" href="/code-pirates.css">
+  <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-  This is the view to serve the ProblemChild homepage
-This is the presentation of how the founder is viewing the homepage of ProblemChild
+  <div class="story">
+    <p>This is the view to serve the PROBLEM CHILD homepage
+  This is the presentation of how the founder is viewing the homepage of PROBLEM CHILD
 
-We know we will need some way to ‘capture’ our username so we know who our users are.
-I know! We can use a text box and every time someone enters their name I will store their
-name in my computer as ‘users’. I’ve got my MVP. Let’s send this off to mom and my best friend, Jamie.
-
-
-!! SEPARATE DIV !!
-ProblemChild
-
-Welcome to ProblemChild!
-
-Nobody’s perfect. ProblemChild is a community of growth.
-
-We all have problems - that’s why you’re here.
-
-But today, you’re going to learn how to begin solving them.
-
-Enter your username to begin:
-<form action="/001_variables" method="post">
-  <div>
-    <label for="name">Your Name</label>
-    <input id="name" type="text" name="user[name]" value="">
+  We know we will need some way to ‘capture’ our username so we know who our users are.
+  I know! We can use a text box and every time someone enters their name I will store their
+  name in my computer as ‘users’. I’ve got my MVP. Let’s send this off to mom and my best friend, Jamie.</p>
   </div>
-  <input type="submit" value="Submit">
-</form>
 
+  <div class="lesson">
+    <span class="lesson-instructions">
+      <p>PROBLEM CHILD
+
+      Welcome to PROBLEM CHILD!
+
+      Nobody’s perfect. PROBLEM CHILD is a community of growth.
+
+      We all have problems - that’s why you’re here.
+
+      But today, you’re going to learn how to begin solving them.
+
+      Enter your username to begin:
+      <form action="/001_variables" method="post">
+        <div>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" name="user[name]" value="">
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </span>
+  </div>
+
+  <div class="text-editor">
+    <p id="text-editor-text">
+      # Welcome to PROBLEM CHILD.
+    </p>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  User-MacBook-Air in ~ </p>
+  </div>
 </body>
-</html>
