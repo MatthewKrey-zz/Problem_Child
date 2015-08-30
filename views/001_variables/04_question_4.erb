@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="code-pirates.css">
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="story">
+    We check our blog when we wake up and, to our surprise, Oprah saw ProblemChild on Twitter after our mom tweeted about it and 500,000 people entered their names into ProblemChild. We officially have 500,000 users.
+
+    But we need to know who our users are. Okay. We just did this. Lets write a user variable for every user that signed-up for ProblemChild overnight.
+  </div>
+
+  <div class="lesson">
+    <span class="lesson-instructions">
+      Our first 13 users are ourself, Mom, Jaime, Oprah, Matt, Sarah, Steph, George, Gabi, Tyler, Ronaldo, Jacques and Avi. Enter their names below!
+    </span>
+
+    <span class="lesson-buttons">
+      User_1 = '<%= @user.name %>'
+      User_2 = 'Mom'
+      User_3 = 'Jamie'
+      User_4 = 'Oprah'
+      User_5 = <input type="text">
+      User_6 = <input type="text">
+      User_7 = <input type="text">
+      User_8 = <input type="text">
+      User_9 = <input type="text">
+      User_10 = <input type="text">
+      User_11 = <input type="text">
+      User_12 = <input type="text">
+      User_13 = <input type="text">
+      <form action="/001_variables/05_question_5" method="get">
+        <input type="submit" value="Submit">
+      </form>
+    </span>
+  </div>
+
+  <div class="text-editor">
+    <p id="text-editor-text">
+      Users = '<%= @user.name%>'<br>
+      Users = 'Mom'<br>
+      Users = 'Jamie'<br>
+    </p>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
+    Users = 'Jamie'
+  </div>
+</body>
+</html>

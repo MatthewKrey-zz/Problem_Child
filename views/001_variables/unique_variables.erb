@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="code-pirates.css">
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="story">
+    <p>Boom! ProblemChild is up-and-running with its first users! Let’s see who are
+      users are so we know who is using ProblemChild.</p>
+  </div>
+
+  <div class="lesson">
+    <span class="lesson-instructions">
+      Who are your Users?
+    </span>
+
+    <span class="lesson-buttons">
+      <form action="/001_variables/variables_index" method="post">
+        <div>
+          <input type="submit" name="answer" value="<%= @params["user"]["name"]%>">
+          <input type="submit" name="answer" value="Users">
+        </div>
+      </form>
+    </span>
+  </div>
+
+  <div class="text-editor">
+    <p id="text-editor-text">
+      User = 'Mom'<br>
+      User = 'Jamie'<br>
+      User = '<%= @params["user"]["name"]%>'<br>
+    </p>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
+  </div>
+</body>
