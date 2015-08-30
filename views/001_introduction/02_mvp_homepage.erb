@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+</head>
+
+<div id="header-text">PROBLEM CHILD</div>
+
+<body>
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
+  <div class="story">
+    <p>This is the view to serve the PROBLEM CHILD homepage
+  This is the presentation of how the founder is viewing the homepage of PROBLEM CHILD
+
+  We know we will need some way to ‘capture’ our username so we know who our users are.
+  I know! We can use a text box and every time someone enters their name I will store their
+  name in my computer as ‘users’. I’ve got my MVP. Let’s send this off to mom and my best friend, Jamie.</p>
+  </div>
+
+  <div class="lesson">
+    <span class="lesson-instructions">
+      <div class="browser-mockup">
+        <p>PROBLEM CHILD</p>
+
+        <p>Welcome to PROBLEM CHILD!</p>
+        Nobody’s perfect. PROBLEM CHILD is a community of growth. <br>
+        We all have problems - that’s why you’re here. <br>
+        But today, you’re going to learn how to begin solving them. <br>
+        Enter your username to begin: <br>
+        <form action="/001_variables" method="post">
+          <div>
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="user[name]" value="">
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </span>
+  </div>
+
+  <div class="text-editor">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  User-MacBook-Air in ~ </p>
+  </div>
+</body>

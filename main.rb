@@ -12,8 +12,8 @@ class App < Sinatra::Base
     erb :'001_introduction/01_introduction'
   end
 
-  get '/001_introduction/02_founders' do
-    erb :'001_introduction/02_founders'
+  get '/001_introduction/02_mvp_homepage' do
+    erb :'001_introduction/02_mvp_homepage'
   end
 
   get '/001_introduction/03_mvp_homepage' do
