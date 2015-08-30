@@ -6,36 +6,48 @@
 </head>
 
 <body>
-  <div class="story">
-    <p>Boom! ProblemChild is up-and-running with its first users! Let’s see who are
-      users are so we know who is using ProblemChild.</p>
-  </div>
+  <!-- <div class="story">
+    <p>Oh no! Looks like our Users are just Jamie</p>
+  </div> -->
 
   <div class="lesson">
     <span class="lesson-instructions">
-      Who are your Users?
+      Oh no! Looks like our 'Users' are just Jamie!
+
+      Imagine I gave you a box. This box can only contain one item. You can choose whatever item you want to put inside of your box. But your box can only hold that one item you choose.
+
+      If you want to put a different item inside your box, you absolutely can. You have complete control over what you put inside of your box. But remember, your box can only hold one item. If you choose to put a different item in your same box, you have to take whatever you had in your box before and take it out to make room for your new item.
+      In the world of Ruby, everything is an object. And Ruby has objects that are exactly like the box I just gave you - they are called Variables. Storing items inside of each of my Variables, in the world of Ruby, is called Variable Assignment.
     </span>
 
     <span class="lesson-buttons">
-      <form action="/001_variables/variables_index" method="post">
         <div>
-          <input type="submit" name="answer" value="<%= @user.name %>">
-          <input type="submit" name="answer" value="Users">
+          Q1: In Ruby, is everything an object?
+          <input type="checkbox" name="answer" value="Yes">Yes<br>
+          <input type="checkbox" name="answer" value="No">No
         </div>
-      </form>
+        <div>
+          Q2: Are variables objects?
+          <input type="checkbox" name="answer" value="Yes">Yes<br>
+          <input type="checkbox" name="answer" value="No">No
+        </div>
+        <form action="/001_variables/03_question_3" method="get">
+          <input type="submit" value="Submit">
+        </form>
     </span>
   </div>
 
   <div class="text-editor">
     <p id="text-editor-text">
-      User = 'Mom'<br>
-      User = 'Jamie'<br>
-      User = '<%= @user.name%>'<br>
+      Users = '<%= @user.name%>'<br>
+      Users = 'Mom'<br>
+      Users = 'Jamie'<br>
     </p>
   </div>
 
   <div class="repl">
     <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
+    Users = 'Jamie'
   </div>
 </body>
 </html>

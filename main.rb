@@ -26,9 +26,28 @@ class App < Sinatra::Base
   end
 
   get '/001_variables/02_question_2' do
-    @user = User.first
-    # binding.pry
+    @user = User.last
     erb :'001_variables/02_question_2'
+  end
+
+  get '/001_variables/03_question_3' do
+    @user = User.last
+    erb :'001_variables/03_question_3'
+  end
+
+  get '/001_variables/04_question_4' do
+    @user = User.last
+    erb :'001_variables/04_question_4'
+  end
+
+  get '/001_variables/05_question_5' do
+    @user = User.last
+    erb :'001_variables/05_question_5'
+  end
+
+  get '/001_variables/06_question_6' do
+    @user = User.last
+    erb :'001_variables/06_question_6'
   end
 
   post '/001_variables/variables_index' do
@@ -43,16 +62,10 @@ class App < Sinatra::Base
   end
 end
 
-  # get '/' do
-  #   erb :shiaku_page
-  # end
-  #
-  # post '/' do
-  #   # user = params[:user]
-  #   haiku = Haiku.new
-  #   haiku.create_poem
-  #   @first_line = haiku.first_line
-  #   @second_line = haiku.second_line
-  #   @third_line = haiku.third_line
-  #   erb :shiaku_page
-  # end
+# post '/001_variables/04_question_4' do
+#   3.times {VariableName.create(params[:variable_names])}
+#   @user = User.first
+#   @variable_names = VariableName.last(3)
+#   binding.pry
+#   erb :'001_variables/04_question_4'
+# end
