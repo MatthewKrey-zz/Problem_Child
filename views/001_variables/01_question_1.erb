@@ -3,40 +3,71 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="header-text">PROBLEM CHILD</div>
+
 <body>
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
   <div class="story">
     <p>Boom! Mom and Jamie have signed up as well. ProblemChild is up-and-running with its first users!</p>
   </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
-      Who are your Users?
-    </span>
+      <div class="browser-mockup">
+        <p><span class="lesson-instructions">
+          Who are your Users?
+        </span></p>
+        <p><span class="lesson-buttons">
+          <input type="checkbox" name="answer"><%= @params["user"]["name"]%>, Mom, Jamie</input><br>
+          <input type="checkbox" name="answer">Monkey, Cheese, Awesome</input><br>
+          <input type="checkbox" name="answer">Jamie, Dad, Rover</input><br>
+        </span></p>
 
-    <span class="lesson-buttons">
-      <input type="checkbox" name="answer"><%= @params["user"]["name"]%>, Mom, Jamie</input><br>
-      <input type="checkbox" name="answer">Monkey, Cheese, Awesome</input><br>
-      <input type="checkbox" name="answer">Jamie, Dad, Rover</input><br>
-    </span>
+        <p><span class="lesson-instructions">
+          How do you know these are your Users?
+        </span></p>
 
-    <br>
-    <br>
-    <span class="lesson-instructions">
-      How do you know these are your Users?
-    </span>
+        <p><span class="lesson-buttons">
+            <input type="checkbox" name="answer">I stored all of my 'Users' in this website using my username text box.</input><br>
+            <input type="checkbox" name="answer">My computer stores all of my information in memory. </input><br>
+            <input type="checkbox" name="answer">Ruby comes installed with Users when I download it to my computer.</input><br>
+        </span></p>
 
-    <span class="lesson-buttons">
-        <input type="checkbox" name="answer">I stored all of my 'Users' in this website using my username text box.</input><br>
-        <input type="checkbox" name="answer">My computer stores all of my information in memory. </input><br>
-        <input type="checkbox" name="answer">Ruby comes installed with Users when I download it to my computer.</input><br>
+        <p>You've made your choice. Let’s see who our users are so we know who is using ProblemChild.</p>
+        <form action="/001_variables/02_question_2" method="get">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </span>
+  </div>
 
-    You've made your choice. Let’s see who our users are so we know who is using ProblemChild.
-    <form action="/001_variables/02_question_2" method="get">
-      <input type="submit" value="Submit">
-    </form>
+  <div class="text-editor">
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment">Users = '<%= @user.name%>'</li>
+          <li class="line comment">Users = 'Mom'</li>
+          <li class="line comment">Users = 'Jamie'</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="repl">
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  <%=@params["user"]["name"]%>-MacBook-Air in ~ </p>
   </div>
 </body>
 </html>

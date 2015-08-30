@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/code-pirates.css">
+  <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="header-text">PROBLEM CHILD</div>
+
 <body>
-  <!-- <div class="story">
-    <p>Oh no! Looks like our Users are just Jamie</p>
-  </div> -->
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
+  <div class="story">
+    <p>Oh no! Looks like our 'Users' are just Jamie!</p>
+  </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
-      Oh no! Looks like our 'Users' are just Jamie!
+      <div class="browser-mockup">
+            Imagine I gave you a box. This box can only contain one item. You can choose whatever item you want to put inside of your box. But your box can only hold that one item you choose.
 
-      Imagine I gave you a box. This box can only contain one item. You can choose whatever item you want to put inside of your box. But your box can only hold that one item you choose.
+            If you want to put a different item inside your box, you absolutely can. You have complete control over what you put inside of your box. But remember, your box can only hold one item. If you choose to put a different item in your same box, you have to take whatever you had in your box before and take it out to make room for your new item.
+            In the world of Ruby, everything is an object. And Ruby has objects that are exactly like the box I just gave you - they are called Variables. Storing items inside of each of my Variables, in the world of Ruby, is called Variable Assignment.
 
-      If you want to put a different item inside your box, you absolutely can. You have complete control over what you put inside of your box. But remember, your box can only hold one item. If you choose to put a different item in your same box, you have to take whatever you had in your box before and take it out to make room for your new item.
-      In the world of Ruby, everything is an object. And Ruby has objects that are exactly like the box I just gave you - they are called Variables. Storing items inside of each of my Variables, in the world of Ruby, is called Variable Assignment.
-    </span>
-
-    <span class="lesson-buttons">
-        <div>
-          Q1: In Ruby, is everything an object?
-          <input type="checkbox" name="answer" value="Yes">Yes<br>
-          <input type="checkbox" name="answer" value="No">No
+          <span class="lesson-buttons">
+              <div>
+                Q1: In Ruby, is everything an object?
+                <input type="checkbox" name="answer" value="Yes">Yes<br>
+                <input type="checkbox" name="answer" value="No">No
+              </div>
+              <div>
+                Q2: Are variables objects?
+                <input type="checkbox" name="answer" value="Yes">Yes<br>
+                <input type="checkbox" name="answer" value="No">No
+              </div>
+              <form action="/001_variables/03_question_3" method="get">
+                <input type="submit" value="Submit">
+              </form>
+          </span>
         </div>
-        <div>
-          Q2: Are variables objects?
-          <input type="checkbox" name="answer" value="Yes">Yes<br>
-          <input type="checkbox" name="answer" value="No">No
-        </div>
-        <form action="/001_variables/03_question_3" method="get">
-          <input type="submit" value="Submit">
-        </form>
     </span>
   </div>
 
   <div class="text-editor">
-    <p id="text-editor-text">
-      Users = '<%= @user.name%>'<br>
-      Users = 'Mom'<br>
-      Users = 'Jamie'<br>
-    </p>
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
+        </ol>
+      </div>
+    </div>
   </div>
 
   <div class="repl">
-    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
-    Users = 'Jamie'
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  User-MacBook-Air in ~ </p>
   </div>
 </body>
-</html>
