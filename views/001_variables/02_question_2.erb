@@ -13,27 +13,28 @@
     <img src="/assets/02_app_background_image.jpg" alt="">
   </div>
   <div class="story">
-    <p>Oh no! Looks like our 'Users' are just Jamie!</p>
+    <p>We just ran our program by typing 'ruby problem_child.rb' in the terminal in the bottom right. It evaluated the code to find who our 'Users' are.
+      Oh no! Looks like our 'Users' are just Jamie!</p>
   </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
       <div class="browser-mockup">
-            Imagine I gave you a box. This box can only contain one item. You can choose whatever item you want to put inside of your box. But your box can only hold that one item you choose.
+            <p>Imagine I gave you a box. This box can only contain one item. You can choose whatever item you want to put inside of your box. But your box can only hold that one item you choose.</p>
 
-            If you want to put a different item inside your box, you absolutely can. You have complete control over what you put inside of your box. But remember, your box can only hold one item. If you choose to put a different item in your same box, you have to take whatever you had in your box before and take it out to make room for your new item.
-            In the world of Ruby, everything is an object. And Ruby has objects that are exactly like the box I just gave you - they are called Variables. Storing items inside of each of my Variables, in the world of Ruby, is called Variable Assignment.
+            <p>If you want to put a different item inside your box, you absolutely can. You have complete control over what you put inside of your box. But remember, your box can only hold one item. If you choose to put a different item in your same box, you have to take whatever you had in your box before and take it out to make room for your new item.
+            In the world of Ruby, everything is an object. And Ruby has objects that are exactly like the box I just gave you - they are called Variables. Storing items inside of each of my Variables, in the world of Ruby, is called Variable Assignment.</p>
 
           <span class="lesson-buttons">
               <div>
-                Q1: In Ruby, is everything an object?
-                <input type="checkbox" name="answer" value="Yes">Yes<br>
-                <input type="checkbox" name="answer" value="No">No
+                <p>Q1: In Ruby, is everything an object?
+                <input type="checkbox" name="answer" value="Yes">Yes
+                <input type="checkbox" name="answer" value="No">No</p>
               </div>
               <div>
-                Q2: Are variables objects?
-                <input type="checkbox" name="answer" value="Yes">Yes<br>
-                <input type="checkbox" name="answer" value="No">No
+                <p>Q2: Are variables objects?
+                <input type="checkbox" name="answer" value="Yes">Yes
+                <input type="checkbox" name="answer" value="No">No</p>
               </div>
               <form action="/001_variables/03_question_3" method="get">
                 <input type="submit" value="Submit">
@@ -56,12 +57,20 @@
       <div class="window-content">
         <ol class="code">
           <li class="line comment"># Welcome to PROBLEM CHILD</li>
+          <li class="line comment">Users = '<%= @user.name%>'</li>
+          <li class="line comment">Users = 'Mom'</li>
+          <li class="line comment">Users = 'Jamie'</li>
+          <br>
+          <li class="line comment">puts 'Users'</li>
         </ol>
       </div>
     </div>
   </div>
 
   <div class="repl">
-    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  User-MacBook-Air in ~ </p>
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  <%=@user.name%>-MacBook-Air in ~problem_child.rb <br>
+      ruby problem_child.rb<br>
+      'Jamie'
+    </p>
   </div>
 </body>

@@ -20,7 +20,7 @@
     <span class="lesson-instructions">
       <div class="browser-mockup">
         <p><span class="lesson-instructions">
-          Who are your Users?
+          Q1: Who are your Users?
         </span></p>
         <p><span class="lesson-buttons">
           <input type="checkbox" name="answer"><%= @params["user"]["name"]%>, Mom, Jamie</input><br>
@@ -29,7 +29,7 @@
         </span></p>
 
         <p><span class="lesson-instructions">
-          How do you know these are your Users?
+          Q2: How do you know these are your Users?
         </span></p>
 
         <p><span class="lesson-buttons">
@@ -58,6 +58,7 @@
       </div>
       <div class="window-content">
         <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
           <li class="line comment">Users = '<%= @user.name%>'</li>
           <li class="line comment">Users = 'Mom'</li>
           <li class="line comment">Users = 'Jamie'</li>
