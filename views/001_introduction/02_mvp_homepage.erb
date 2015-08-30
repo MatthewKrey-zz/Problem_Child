@@ -3,9 +3,15 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="header-text">PROBLEM CHILD</div>
+
 <body>
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
   <div class="story">
     <p>This is the view to serve the PROBLEM CHILD homepage
   This is the presentation of how the founder is viewing the homepage of PROBLEM CHILD
@@ -17,31 +23,41 @@
 
   <div class="lesson">
     <span class="lesson-instructions">
-      <p>PROBLEM CHILD
+      <div class="browser-mockup">
+        <p>PROBLEM CHILD</p>
 
-      Welcome to PROBLEM CHILD!
-
-      Nobody’s perfect. PROBLEM CHILD is a community of growth.
-
-      We all have problems - that’s why you’re here.
-
-      But today, you’re going to learn how to begin solving them.
-
-      Enter your username to begin:
-      <form action="/001_variables" method="post">
-        <div>
-          <label for="name">Your Name</label>
-          <input id="name" type="text" name="user[name]" value="">
-        </div>
-        <input type="submit" value="Submit">
-      </form>
+        <p>Welcome to PROBLEM CHILD!</p>
+        Nobody’s perfect. PROBLEM CHILD is a community of growth. <br>
+        We all have problems - that’s why you’re here. <br>
+        But today, you’re going to learn how to begin solving them. <br>
+        Enter your username to begin: <br>
+        <form action="/001_variables" method="post">
+          <div>
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="user[name]" value="">
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </span>
   </div>
 
   <div class="text-editor">
-    <p id="text-editor-text">
-      # Welcome to PROBLEM CHILD.
-    </p>
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
+        </ol>
+      </div>
+    </div>
   </div>
 
   <div class="repl">
