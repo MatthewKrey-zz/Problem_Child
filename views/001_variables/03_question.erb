@@ -15,16 +15,16 @@
   <div class="story">
     <p>Okay. So everything in Ruby is an object.
       Variables are objects that can store any item of information that I choose.
-      You've stored your three users as the unique variables User_1 = '<%= @user.name%>', User_2 = 'Mom' and User_3 = 'Jamie'.</p>
+      You've stored your three users as the unique variables user_1 = '<%= @user.name%>', user_2 = 'Mom' and user_3 = 'Jamie'.</p>
   </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
       <div class="browser-mockup">
-            <p>Well-done. Another day in the life of ProblemChild. We can finally get some sleep.</p>
+            <p>Well done. Another day in the life of PROBLEM CHILD. We can finally get some sleep.</p>
 
             <span class="lesson-buttons">
-              <form action="/001_variables/04_question_4" method="get">
+              <form action="/001_variables/04_question" method="get">
                 <input type="submit" value="Sleep">
               </form>
             </span>
@@ -45,11 +45,9 @@
       <div class="window-content">
         <ol class="code">
           <li class="line comment"># Welcome to PROBLEM CHILD</li>
-          <li class="line comment">Users = '<%= @user.name%>'</li>
-          <li class="line comment">Users = 'Mom'</li>
-          <li class="line comment">Users = 'Jamie'</li>
-          <br>
-          <li class="line comment">puts 'Users'</li>
+          <li class="line comment">user_1 = '<%= @user.name%>'</li>
+          <li class="line comment">user_2 = 'Mom'</li>
+          <li class="line comment">user_3 = 'Jamie'</li>
         </ol>
       </div>
     </div>
@@ -57,8 +55,6 @@
 
   <div class="repl">
     <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  <%=@user.name%>-MacBook-Air in ~problem_child.rb <br>
-      ruby problem_child.rb<br>
-      'Jamie'
     </p>
   </div>
 </body>

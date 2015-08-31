@@ -22,32 +22,32 @@ class App < Sinatra::Base
 
   post '/001_variables' do
     @user = User.create(params[:user])
-    erb :'001_variables/01_question_1'
+    erb :'001_variables/01_question'
   end
 
-  get '/001_variables/02_question_2' do
+  get '/001_variables/02_question' do
     @user = User.last
-    erb :'001_variables/02_question_2'
+    erb :'001_variables/02_question'
   end
 
-  get '/001_variables/03_question_3' do
+  get '/001_variables/03_question' do
     @user = User.last
-    erb :'001_variables/03_question_3'
+    erb :'001_variables/03_question'
   end
 
-  get '/001_variables/04_question_4' do
+  get '/001_variables/04_question' do
     @user = User.last
-    erb :'001_variables/04_question_4'
+    erb :'001_variables/04_question'
   end
 
-  get '/001_variables/05_question_5' do
+  get '/001_variables/05_question' do
     @user = User.last
-    erb :'001_variables/05_question_5'
+    erb :'001_variables/05_question'
   end
 
-  get '/001_variables/06_question_6' do
+  get '/001_variables/06_question' do
     @user = User.last
-    erb :'001_variables/06_question_6'
+    erb :'001_variables/06_question'
   end
 
   post '/001_variables/variables_index' do
@@ -61,11 +61,3 @@ class App < Sinatra::Base
     end
   end
 end
-
-# post '/001_variables/04_question_4' do
-#   3.times {VariableName.create(params[:variable_names])}
-#   @user = User.first
-#   @variable_names = VariableName.last(3)
-#   binding.pry
-#   erb :'001_variables/04_question_4'
-# end
