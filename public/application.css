@@ -107,6 +107,9 @@ input[type=submit] {
   border-radius: 2px;
   margin-left: 3%;
 }
+input[type=submit]#better-way-button {
+  width: 280px;
+}
 
 input#name {
   width: 200px;
@@ -192,17 +195,6 @@ div.text-editor{
   width: 35%;
   border-radius: 7px;
 }
-
-/*div#file-name {
-  color: #ABB2BF;
-  background-color: #282C34;
-  display: inline-block;
-  font-size: 14px;
-  position: relative;
-  float: left;
-  top: -50px;
-  height: 8%;
-}*/
 
 div.repl{
   text-align: left;

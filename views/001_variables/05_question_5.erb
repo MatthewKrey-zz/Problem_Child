@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/code-pirates.css">
+  <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="header-text">PROBLEM CHILD</div>
+
 <body>
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
+  <div class="story">
+    <p>Wait… we have 500,000 users. We only just entered 13.</p>
+    </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
-      Wait… We have 500,000 users. We only just entered 13.
+      <div class="browser-mockup">
+            <p>How long is it going to take to enter all 500,000 users? Wait… What if more users sign-up while we are spending our time writing all of our usernames into ProblemChild? Wait… What if someone changes their username? … why didn’t I just take that Google offer?!
+            There's got to be a better way!</p>
 
-      How long is it going to take to enter all 500,000 users? Wait… What if more users sign-up while we are spending our time writing all of our usernames into ProblemChild? Wait… What if someone changes their username? … why didn’t I just take that Google offer?!
-
-      There's got to be a better way!
-    </span>
-
-    <span class="lesson-buttons">
-      <form action="/001_variables/06_question_6" method="get">
-        <input type="submit" value="Take me to the better way!">
-      </form>
+            <span class="lesson-buttons">
+              <form action="/001_variables/06_question_6" method="get">
+                <input type="submit" id="better-way-button" value="Take me to the better way!">
+              </form>
+            </span>
+        </div>
     </span>
   </div>
 
   <div class="text-editor">
-    <p id="text-editor-text">
-      User_1 = '<%= @user.name %>'
-      User_2 = 'Mom'
-      User_3 = 'Jamie'
-      User_4 = 'Oprah'
-      User_5 = 'Matt'
-      User_6 = 'Sarah'
-      User_7 = 'Steph'
-      User_8 = 'George'
-      User_9 = 'Gabi'
-      User_10 = 'Tyler'
-      User_11 = 'Ronaldo'
-      User_12 = 'Jacques'
-      User_13 = 'Avi'
-    </p>
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
+          <li class="line comment">User_1 = '<%= @user.name %>'</li>
+          <li class="line comment">User_2 = 'Mom'</li>
+          <li class="line comment">User_3 = 'Jamie'</li>
+          <li class="line comment">User_4 = 'Oprah'</li>
+          <li class="line comment">User_5 = 'Matt'</li>
+          <li class="line comment">User_6 = 'Sarah'</li>
+          <li class="line comment">User_7 = 'Steph'</li>
+          <li class="line comment">User_8 = 'George'</li>
+          <li class="line comment">User_9 = 'Gabi'</li>
+          <li class="line comment">User_10 = 'Tyler'</li>
+          <li class="line comment">User_11 = 'Ronaldo'</li>
+          <li class="line comment">User_12 = 'Jacques'</li>
+          <li class="line comment">User_13 = 'Avi'</li>
+        </ol>
+      </div>
+    </div>
   </div>
 
   <div class="repl">
-    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
-    Users = 'Jamie'
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  <%=@user.name%>-MacBook-Air in ~problem_child.rb <br>
+    </p>
   </div>
 </body>
-</html>
