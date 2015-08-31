@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/code-pirates.css">
+  <link rel="stylesheet" type="text/css" href="/application.css">
   <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 </head>
 
+<div id="header-text">PROBLEM CHILD</div>
+
 <body>
+  <div id="bg">
+    <img src="/assets/02_app_background_image.jpg" alt="">
+  </div>
+  <div class="story">
+    <p>Check out
+  </div>
 
   <div class="lesson">
     <span class="lesson-instructions">
-      Remember before how we had variables? And remember how variables were like boxes that could store any item that we wanted to put in them?
+      <div class="browser-mockup">
+        <p>Remember before how we had variables? And remember how variables were like boxes that could store any item that we wanted to put in them?</p>
+        <p>Imagine I gave you a warehouse. This warehouse can contain many items. You can choose whatever items you want to put inside of your warehouse. But your warehouse can only hold store as many items as can fit inside of it.</p>
+        <p>You have complete control over what you put inside of your warehouse. And you can choose to move items in and out of your warehouse however you would like.</p>
+        <p>In the world of Ruby, everything is an object. And Ruby has an object that are exactly like the warehouse I just gave you - they are called Arrays. Arrays are one type of object called Data Structures in Ruby. Remember how tedious it was to try to enter all of our usernames in manually? In Ruby, a data structure allows us to create one object, with any name that we choose, and store as many items inside of it as we would like (so long as all of the information we want to store can fit inside of our computer. Computers today can store a lot of information, but just like if our warehouse was in the real-world, we cannot store any infinite amount of items inside of it).</p>
 
-      Imagine I gave you a warehouse. This warehouse can contain many items. You can choose whatever items you want to put inside of your warehouse. But your warehouse can only hold store as many items as can fit inside of it.
-
-      You have complete control over what you put inside of your warehouse. And you can choose to move items in and out of your warehouse however you would like.
-
-      In the world of Ruby, everything is an object. And Ruby has an object that are exactly like the warehouse I just gave you - they are called Arrays. Arrays are one type of object called Data Structures in Ruby. Remember how tedious it was to try to enter all of our usernames in manually? In Ruby, a data structure allows us to create one object, with any name that we choose, and store as many items inside of it as we would like (so long as all of the information we want to store can fit inside of our computer. Computers today can store a lot of information, but just like if our warehouse was in the real-world, we cannot store any infinite amount of items inside of it).
-    </span>
-
-    <span class="lesson-buttons">
-      <form action="/001_variables/06_question_6" method="get">
-        <input type="submit" value="Take me to the better way!">
-      </form>
+        <span class="lesson-buttons">
+          <form action="/001_variables/06_question_6" method="get">
+            <input type="submit" id="better-way-button" value="Take me to the better way!">
+          </form>
+        </span>
+        </div>
     </span>
   </div>
 
   <div class="text-editor">
-    <p id="text-editor-text">
-      Users = ['<%= @user.name %>', 'Mom', 'Jamie', 'Oprah', 'Matt', 'Sarah', 'Steph', 'George', 'Gabi', 'Tyler', 'Ronaldo', 'Jacques', 'Avi']
-    </p>
+    <div class="window">
+      <div class="window-titlebar">
+        <span class="window-buttons">
+          <span class="window-button window-button-close"></span>
+          <span class="window-button window-button-hide"></span>
+          <span class="window-button window-button-full"></span>
+        </span>
+        <span class="window-title">Code editor</span>
+      </div>
+      <div class="window-content">
+        <ol class="code">
+          <li class="line comment"># Welcome to PROBLEM CHILD</li>
+          <li class="line comment">users = ['<%= @user.name %>', 'Mom', 'Jamie', 'Oprah', 'Matt', 'Sarah', 'Steph', 'George', 'Gabi', 'Tyler', 'Ronaldo', 'Jacques', 'Avi']</li>
+          <br>
+          <li class="line comment">puts users
+        </ol>
+      </div>
+    </div>
   </div>
 
   <div class="repl">
-    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  Gabrieles-MacBook-Air in ~ </p>
+    <p id="repl-text">|1.9.3-p545| |ruby-2.2.0|  <%=@user.name%>-MacBook-Air in ~problem_child.rb <br>
+      ruby problem_child.rb<br>
+      ['<%= @user.name %>', 'Mom', 'Jamie', 'Oprah', 'Matt', 'Sarah', 'Steph', 'George', 'Gabi', 'Tyler', 'Ronaldo', 'Jacques', 'Avi']
+    </p>
   </div>
 </body>
-</html>
