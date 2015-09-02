@@ -61,6 +61,7 @@ div.lesson{
   position: relative;
   border-radius: 3px 3px 0 0;
   padding: 10px;
+  padding-bottom: 30px;
   height: 100%;
   background-color: #fff;
   opacity: 0.9;
@@ -211,6 +212,6 @@ div.repl{
 }
 
 p#repl-text{
-  font-size: 14px;
+  font-size: 18px;
   color: #00FF00;
 }
